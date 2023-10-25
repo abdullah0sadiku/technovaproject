@@ -1,0 +1,372 @@
+.sec1{
+    width: 100%;
+    height: 500px;
+    color: #daeaff;
+}
+
+.ba{
+    background: rgb(10,35,81);
+    background: linear-gradient(180deg, rgba(10,35,81,1) 0%, rgba(58,100,177,1) 100%);
+}
+
+
+
+.features{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    background: rgb(10,35,81);
+    background: linear-gradient(180deg, rgba(10,35,81,1) 0%, rgba(0,49,148,1) 100%);
+    width: 100%;
+    height: 300px;
+    
+}
+
+.card{
+    align-items: center;
+    
+}
+
+.bb .icon i{
+    font-size: 40px;
+    color: #daeaff;
+}
+
+.prr h5 , p {
+
+    color: #E4F1FF;
+}
+
+#contt{
+    margin: 10px;
+}
+.bb{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.abt{
+    color: #daeaff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.card-body .aa{
+    display: flex;
+    flex-direction: row;
+}
+.card-body img{
+    width: 320px;
+    height: auto;
+}
+
+.a{
+    width: 340px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.oferr{
+    width: 100%;
+    height: 700px;
+    background-color: #021227;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.oferr .album{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+
+.sec1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.sec1 .im img{
+    width: 600px;
+    height: auto;
+}
+.custom-navbar{
+    height: 70px;
+    background-color:#021227;
+}
+
+.logo{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 70px;
+}
+.custom-navbar .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+hr {
+    border: 0;
+    border-top: 100px solid #ffffff; /* Style the horizontal line */
+}
+
+
+
+
+.dayoferr{
+    background: rgb(10,35,81);
+    background: linear-gradient(180deg, rgba(10,35,81,1) 0%, rgba(58,100,177,1) 100%);
+
+    width: 100%;
+    height: 700px;
+
+    display: flex;
+    justify-content: center ;
+}
+
+
+section{
+    background-color:rgba(10,35,81,1);
+    height: fit-content;
+}
+
+
+.cc{
+    display: flex;
+    justify-content: center ;
+    width: 90%;
+    height: 80%;
+}
+
+
+
+.hh{
+    width: 300px;
+}
+
+.ii{
+   gap: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+.prr{
+    background: rgb(6,40,61);
+    background: linear-gradient(13deg, rgba(6,40,61,1) 0%, rgba(0,88,224,1) 100%);
+}
+
+
+
+
+.mindsh{
+    width: 100%;
+
+    background-image: url(./comp/img/ofer.jpg);
+    background-position: center;
+    height: 800px;
+}
+
+#countdown{
+    font-family: 'Archivo Black', sans-serif;
+   
+}
+
+#cards{   
+    font-family: 'Archivo Black', sans-serif;
+    color: #ffffff;
+    background: rgb(6,40,61);
+    background: linear-gradient(13deg, rgba(6,40,61,1) 0%, rgba(0,88,224,1) 100%);
+
+    width: 50%;
+    height:90%;
+    text-align:left;
+}
+
+.vertical-line {
+    border-left: 1px solid #245597; /* You can change the color and width as needed */
+    height: 70%; /* Adjust the height as needed */
+    position: absolute;
+    left: 50%; /* Adjust the left position to control where the line appears */
+}
+  
+
+.carousel-item img{
+    width: 30px;
+    height: auto;
+}
+.containerr {
+    color: #daeaff;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .card-slider {
+    display: flex;
+    animation: slide 25s linear infinite;
+  }
+  
+  .card {
+    background: rgb(10,35,81);
+    background: linear-gradient(180deg, rgb(19, 55, 121) 0%, rgba(0,49,148,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px; /* Adjust the width of each card */
+    height: 90%;
+    margin: 50px; /* Adjust the margin between cards */
+  }
+  .card img{
+    width: 200px;
+    height: auto;
+  }
+ 
+   @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+
+
+
+    100% {
+      transform: translateX(-100%); /* Adjust the distance to move the cards */
+    }
+    0% {
+        transform: translateX(100%); /* Adjust the distance to move the cards */
+      }
+  } 
+  
+
+.form-costum{
+    background: rgb(10,35,81);
+    background: linear-gradient(180deg, rgb(77, 115, 187) 0%, rgba(58,100,177,1) 100%);
+    color: #E4F1FF;
+}
+
+.rev{
+    width: 30%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+
+
+.aa{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background: rgb(10,35,81);
+    background: linear-gradient(0deg, rgba(10,35,81,1) 0%, rgba(0,49,148,1) 100%);
+
+    color: #E4F1FF;
+}
+
+.card-costum{
+    width: 300px;
+    height:auto;
+    color: #daeaff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+.mins{
+    width: 100%;
+    height: 800px;
+
+    background: rgb(10,35,81);
+    background: linear-gradient(0deg, rgba(10,35,81,1) 0%, rgba(0,49,148,1) 100%);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#secc{
+    background: rgb(10,35,81);
+    background: linear-gradient(0deg, rgba(10,35,81,1) 0%, rgba(0,49,148,1) 100%);
+    color: #daeaff;
+}
+
+.secc{
+    width: 100%;
+    height: 1000px;
+}
+
+
+.revv{
+    width: 70%;
+    height: 70%;
+}
+
+
+
+.scrr {
+    max-height: 785px; 
+    overflow-y: auto; 
+    
+}
+
+.scrr::-webkit-scrollbar {
+    width: 0; 
+}
+  
+.scrr::-webkit-scrollbar-thumb {
+    display: none;
+  }
+  
+.scrr::-webkit-scrollbar-track {
+    display: none;
+  }
+
+
+@media (max-width: 768px) {
+    .sec1 {
+      display: block;
+    }
+  
+    .about,
+    .im {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .im img {
+      max-width: 100%;
+    }
+  }

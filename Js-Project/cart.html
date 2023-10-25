@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | TechNova</title>
+
+
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./comp/boot/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    
+    <script src="./comp/boot/bootstrap.bundle.min.js"></script>
+
+</head>
+<body id="secc">
+
+
+    <header></header>
+        <div class="secc">
+            <div id="cart-items-container">
+
+
+            </div>
+        </div>
+    
+    <footer></footer>
+
+
+
+
+
+     <script type="module">
+        import { header } from './comp/header.js';
+        import { footer } from './comp/footer.js';
+    
+
+        footer(document.querySelector('footer'));
+        header(document.querySelector('header'));
+        
+    
+    </script>
+    <script >
+
+
+// cart.js
+
+// Function to retrieve cart items from local storage
+function getCartItems() {
+  const cart = JSON.parse(localStorage.getItem('cart')) || [];
+  return cart;
+}
+
+// Function to display cart items in the cart-items-container
+function displayCartItems() {
+  const cartItems = getCartItems();
+  const cartContainer = document.getElementById('cart-items-container');
+
+  if (cartItems.length === 0) {
+    cartContainer.innerHTML = '<h1 class = "d-flex  justify-content-center"style = " font-family: Archivo Black , sans-serif;">Your cart is empty <i class="fa-solid fa-face-sad-tear"></i></h1>';
+    return;
+  }
+
+  const cartList = document.createElement('div');
+  cartList.classList.add('row');
+
+  cartItems.forEach((item, index) => {
+    const card = document.createElement('div');
+    card.classList.add('col-md-4', 'mb-3');
+
+    card.innerHTML = `
+      <div class="card" style = "color:white;">
+        <img src="${item.image}" class="card-img-top m-3" alt="${item.name}">
+        <div class="card-body">
+          <h5 class="card-title">${item.name}</h5>
+          <p class="card-text">${item.description}</p>
+          <p class="card-text">Price: ${item.price}</p>
+          <button class="btn btn-outline-light" onclick="removeItem(${index})">Remove</button>
+        </div>
+      </div>
+    `;
+
+    cartList.appendChild(card);
+  });
+
+  cartContainer.appendChild(cartList);
+}
+
+// Function to remove an item from the cart
+function removeItem(index) {
+  const cartItems = getCartItems();
+  cartItems.splice(index, 1); // Remove the item at the specified index
+  localStorage.setItem('cart', JSON.stringify(cartItems)); // Update the cart in local storage
+  displayCartItems(); // Refresh the displayed cart items
+}
+
+// Call the displayCartItems function when the page loads
+window.onload = displayCartItems;
+  
+    </script>
+</body>
+</html>
